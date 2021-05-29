@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./stylesheets/utilities.css" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="stylesheet" href="./stylesheets/base.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,6 +18,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -29,20 +29,47 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
-    <header></header>
-    <div class="main-content container">
-      <h1>About Me</h1>
-      <div class="row about-section">
-        <div class="col-lg-4 col-md-5 col-sm-12 col-12">
-          <img
-            src="./assets/images/me1.jpg"
-            style="width: 288px; border-radius: 36%"
-          />
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
-          <p class="mt50 text-center">
+    <section class="home-section">
+      <div class="home-section-container container">
+        <h1 class="anime-text-wrapper mb20">
+          <span class="text-wrapper">
+            <span class="letters">Hi I'm Vidhya</span>
+          </span>
+        </h1>
+        <h4 class="text-center mb20" data-aos="fade-out"
+        data-aos-offset="200"
+        data-aos-delay="60"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true">Working as a Senior Frontend Developer at Adcuratio Media India Private Limited</h4>
+        <h5
+          class="text-center mb20"
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-delay="60"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
+          <i class="fa fa-map-pin"></i>
+          <span>Karur, Tamilnadu, India</span>
+      </h5>
+      </div>
+    </section>
+    <section class="about-section">
+      <h1 class="pt50">About</h1>
+      <div class="container">
+        <img
+          src="./assets/images/me1.jpg"
+          style="width: 288px; border-radius: 36%"
+        />
+        <div class="col-lg-6 text-center mt50 block-center-align f20">
+          <p>
             Enthusiastic, goal oriented & dedicated frontend developer with 4+
             years experience building and maintaining responsive websites
             controlling end to end application development. Looking forward to
@@ -51,37 +78,48 @@
           </p>
         </div>
       </div>
-      <h1 class="mt50">Skills</h1>
-      <div class="row skills-section">
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+    </section>
+    <section class="container skills-section">
+      <h1 class="pt50">Skills</h1>
+      <div class="row mt50">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/html-logo.png" style="width: 100px" />
+          <p class="text-center">HTML</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/css-logo.png" style="width: 92px" />
+          <p class="text-center">CSS</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/js-logo.png" style="width: 95px" />
+          <p class="text-center">JavaScript</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/antd-logo.png" style="width: 92px" />
+          <p class="text-center">Antd</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/bootstrap-logo.png" style="width: 90px" />
+          <p class="text-center">Bootstrap</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/react-logo.png" style="width: 120px" />
+          <p class="text-center">React JS</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/angular-logo.png" style="width: 98px" />
+          <p class="text-center">Angular</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/nodejs-logo.png" style="width: 98px" />
+          <p class="text-center">Node JS</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/graphql-logo.png" style="width: 74px" />
+          <p class="text-center">Graphql</p>
         </div>
       </div>
-    </div>
+    </section>
     <footer>
       <div class="row">
         <div class="offset-1 col-4">
@@ -103,5 +141,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+      var textWrapper = document.querySelector(".anime-text-wrapper .letters");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".anime-text-wrapper .letter",
+          rotateY: [-90, 0],
+          duration: 1300,
+          delay: (el, i) => 45 * i,
+        })
+        .add({
+          targets: ".anime-text-wrapper",
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000,
+        });
+    </script>
   </body>
 </html>
