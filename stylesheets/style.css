@@ -14,7 +14,7 @@ footer {
   bottom: 0;
   left: 0;
   color: white;
-  padding: 0px 110px;
+  padding-top: 10px;
 }
 footer a {
   margin-right: 15px;
@@ -34,11 +34,13 @@ footer a {
   justify-content: space-between;
   align-items: center;
 }
-.content {
-  width: 70%;
-  margin-left: 30px;
-}
 .f12 {
   font-size: 12px;
 }
-
+.skills-section img, .about-section img {
+  display: block;
+  margin: auto;
+}
+.skills-section {
+  padding-bottom: 150px;
+}

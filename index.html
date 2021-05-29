@@ -10,72 +10,97 @@
     <link rel="stylesheet" href="./stylesheets/base.css" />
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header></header>
     <div class="main-content container">
       <h1>About Me</h1>
-      <div class="flex">
-        <img src="./assets/images/me1.jpg" style="width: 288px; border-radius: 36%" />
-        <p class="content mt50">Enthusiastic, goal oriented & dedicated frontend developer with 4+ years experience building and maintaining responsive websites controlling end to end application development. Looking forward to explore more and gain knowledge to enhance my skills & achieve desired results for company's goals.</p>
+      <div class="row about-section">
+        <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+          <img
+            src="./assets/images/me1.jpg"
+            style="width: 288px; border-radius: 36%"
+          />
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+          <p class="mt50 text-center">
+            Enthusiastic, goal oriented & dedicated frontend developer with 4+
+            years experience building and maintaining responsive websites
+            controlling end to end application development. Looking forward to
+            explore more and gain knowledge to enhance my skills & achieve
+            desired results for company's goals.
+          </p>
+        </div>
       </div>
       <h1 class="mt50">Skills</h1>
-      <div class="row">
-        <div class="col-lg-2">
+      <div class="row skills-section">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/html-logo.png" style="width: 100px" />
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/css-logo.png" style="width: 92px" />
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/js-logo.png" style="width: 95px" />
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/antd-logo.png" style="width: 92px" />
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/bootstrap-logo.png" style="width: 90px" />
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/react-logo.png" style="width: 120px" />
         </div>
-      </div>
-      <div class="row mt30">
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/angular-logo.png" style="width: 98px" />
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/nodejs-logo.png" style="width: 98px" />
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
           <img src="./assets/images/graphql-logo.png" style="width: 74px" />
         </div>
       </div>
     </div>
-    <footer class="flex-container2">
-      <p class="f12">&copy; Vidhya, 2021</p>
-      <div>
-        <a href="https://www.linkedin.com/in/vidhya1706/" target="_blank"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-        <a href="mailto:vidhya.inboxme@gmail.com" target="_blank"
-          ><i class="fa fa-envelope"></i
-        ></a>
-        <a href="https://github.com/vidhya-balasubramanian" target="_blank"
-          ><i class="fa fa-github-square"></i
-        ></a>
-        <a href="https://www.instagram.com/vidhya0617/" target="_blank"
-          ><i class="fa fa-instagram"></i
-        ></a>
+    <footer>
+      <div class="row">
+        <div class="offset-1 col-4">
+          <p class="f12">&copy; Vidhya, 2021</p>
+        </div>
+        <div class="offset-lg-4 col-lg-3 offset-md-4 col-md-3 offset-2 col-5">
+          <a href="https://www.linkedin.com/in/vidhya1706/" target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="mailto:vidhya.inboxme@gmail.com" target="_blank"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a href="https://github.com/vidhya-balasubramanian" target="_blank"
+            ><i class="fa fa-github-square"></i
+          ></a>
+          <a href="https://www.instagram.com/vidhya0617/" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </footer>
   </body>
