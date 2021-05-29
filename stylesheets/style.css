@@ -41,6 +41,9 @@ footer a {
   display: block;
   margin: auto;
 }
+.skills-section img {
+  margin-bottom: 20px;
+}
 .skills-section {
   padding-bottom: 150px;
 }
