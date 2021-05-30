@@ -25,11 +25,17 @@
 .mb30 {
   margin-bottom: 30px !important;
 }
+.mb40 {
+  margin-bottom: 40px !important;
+}
 .mb50 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 .pt50 {
   padding-top: 50px !important;
+}
+.pb50 {
+  padding-bottom: 50px !important;
 }
 .bold {
   font-weight: bold;
