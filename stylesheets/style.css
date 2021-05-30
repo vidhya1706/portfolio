@@ -93,3 +93,7 @@ footer a {
   transform-origin: 0 0;
   font-weight: bold;
 }
+
+.skills-image-wrapper {
+  height: 100px;
+}
