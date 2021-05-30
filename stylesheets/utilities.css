@@ -7,9 +7,6 @@
 .mt50 {
   margin-top: 50px !important;
 }
-.pt50 {
-  padding-top: 50px !important;
-}
 .ml10 {
   margin-left: 10px;
 }
@@ -19,9 +16,24 @@
 .mr10 {
   margin-right: 10px;
 }
-.mb50 {
-  margin-bottom: 50px;
+.mb10 {
+  margin-bottom: 10px !important;
 }
 .mb20 {
   margin-bottom: 20px !important;
+}
+.mb30 {
+  margin-bottom: 30px !important;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.pt50 {
+  padding-top: 50px !important;
+}
+.bold {
+  font-weight: bold;
+}
+.text-align-left {
+  text-align: left !important;
 }

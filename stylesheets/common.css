@@ -1,0 +1,38 @@
+.flex {
+  display: flex;
+}
+.flex-container1 {
+  display: flex;
+  justify-content: center;
+}
+.flex-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f12 {
+  font-size: 12px;
+}
+.f20 {
+  font-size: 20px;
+}
+.card {
+  width: 300px;
+  margin-bottom: 30px;
+  border-radius: 8px !important;
+  min-height: 212px;
+}
+.card-title {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  line-height: 24px;
+  font-style: italic;
+}
+.section-bg-color {
+  background-color: #f6f6f6;
+}
+.block-center-align {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
