@@ -65,6 +65,12 @@ section {
   text-align: center;
 }
 
+.srec-logo {
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 576px) {
   footer {
     padding: 10px;
