@@ -60,3 +60,19 @@ section {
 .e-section {
   padding-bottom: 150px;
 }
+
+@media only screen and (max-width: 576px) {
+  footer {
+    padding: 10px;
+    height: 55px;
+  } 
+  footer > .row > div {
+    text-align: center;
+  }
+  footer > .row > div:first-child {
+    margin-bottom: 5px;
+  }
+  .home-section {
+    height: calc(100vh - 55px);
+  }
+}
