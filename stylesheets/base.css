@@ -32,5 +32,9 @@ html {
   .e-section .section-title {
     text-align: center !important;
   } 
+
+  .experience-info {
+    justify-content: center;
+  }
 }
 

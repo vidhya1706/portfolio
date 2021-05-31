@@ -10,6 +10,15 @@
   justify-content: space-between;
   align-items: center;
 }
+.flex-container3 {
+  display: flex;
+  align-items: center;
+}
+.flex-container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .f12 {
   font-size: 12px;
 }

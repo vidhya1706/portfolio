@@ -60,6 +60,10 @@ section {
 .e-section {
   padding-bottom: 150px;
 }
+.company-logo-wrapper {
+  width: 166px;
+  text-align: center;
+}
 
 @media only screen and (max-width: 576px) {
   footer {
