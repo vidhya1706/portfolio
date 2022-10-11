@@ -12,26 +12,27 @@ footer {
 footer a {
   margin-right: 15px;
 }
-.skills-section img, .about-section img {
+.skills-section img,
+.about-section img {
   display: block;
   margin: auto;
 }
 .skills-section p {
   margin-bottom: 30px !important;
-  font-family: 'Proximanova-Regular';
+  font-family: "Proximanova-Regular";
   font-weight: 200;
 }
 
 .home-section {
   width: 100%;
   height: calc(100vh - 40px);
-  background:  url(../assets/images/laptopbg.jpg);
+  background: url(../assets/images/laptopbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: table;
   color: #fff;
   font-weight: bold;
-  font-family: 'Arvo', serif !important;
+  font-family: "Arvo", serif !important;
 }
 .home-section-container {
   display: table-cell;
@@ -39,23 +40,25 @@ footer a {
 }
 section {
   width: 100%;
-  min-height: calc(100vh - 40px); 
+  min-height: calc(100vh - 40px);
 }
 .section-title {
   text-align: center;
   margin-bottom: 25px !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600 !important;
 }
 .skills-image-wrapper {
   height: 100px;
+  display: flex;
 }
-.e-section p, .projects-section .card {
+.e-section p,
+.projects-section .card {
   font-family: Proximanova-Regular;
 }
 .about-section p {
   font-size: 18px;
-  font-family: 'Proximanova-Regular';
+  font-family: "Proximanova-Regular";
 }
 .e-section {
   padding-bottom: 150px;
@@ -75,7 +78,7 @@ section {
   footer {
     padding: 10px;
     height: 64px;
-  } 
+  }
   footer > .row > div {
     text-align: center;
   }
