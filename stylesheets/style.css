@@ -19,8 +19,6 @@ footer a {
 }
 .skills-section p {
   margin-bottom: 30px !important;
-  font-family: "Proximanova-Regular";
-  font-weight: 200;
 }
 
 .home-section {
@@ -32,7 +30,6 @@ footer a {
   display: table;
   color: #fff;
   font-weight: bold;
-  font-family: "Arvo", serif !important;
 }
 .home-section-container {
   display: table-cell;
@@ -45,7 +42,6 @@ section {
 .section-title {
   text-align: center;
   margin-bottom: 25px !important;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600 !important;
 }
 .skills-image-wrapper {
@@ -54,11 +50,9 @@ section {
 }
 .e-section p,
 .projects-section .card {
-  font-family: Proximanova-Regular;
 }
 .about-section p {
   font-size: 18px;
-  font-family: "Proximanova-Regular";
 }
 .e-section {
   padding-bottom: 150px;
@@ -74,6 +68,24 @@ section {
   margin: auto;
   margin-bottom: 20px;
 }
+
+/*  */
+.vidhya-profile-img {
+  border-radius: 50%;
+}
+.profile-section {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background-color: #f5edeb73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-section__right-content {
+  width: 400px;
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 576px) {
   footer {
     padding: 10px;
@@ -85,7 +97,11 @@ section {
   footer > .row > div:first-child {
     margin-bottom: 5px;
   }
-  .home-section {
+  .home-section,
+  .profile-section {
     height: calc(100vh - 64px);
+  }
+  .profile-section {
+    flex-wrap: wrap;
   }
 }

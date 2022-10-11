@@ -15,26 +15,26 @@ ul {
 ul > li:not(:last-child) {
   margin-bottom: 5px;
 }
-@font-face {
+/* @font-face {
   font-family: Proximanova-Regular;
   src: url(../assets/fonts/Proximanova-Regular.ttf);
-}
+} */
 
 html {
   font-size: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
   html {
-    font-size: 88%; 
+    font-size: 88%;
   }
 
   .e-section .section-title {
     text-align: center !important;
-  } 
+  }
 
   .experience-info {
     justify-content: center;
   }
 }
-
