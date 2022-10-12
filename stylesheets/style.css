@@ -1,107 +1,153 @@
-footer {
-  background-color: #222222;
-  width: 100%;
-  height: 40px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  color: white;
-  padding-top: 10px;
-  font-weight: bold;
+html {
+  font-size: 100%;
 }
-footer a {
-  margin-right: 15px;
+body {
+  margin: 0;
+  font-family: "Noto Sans";
 }
-.skills-section img,
-.about-section img {
-  display: block;
-  margin: auto;
+p {
+  margin: 0 !important;
 }
-.skills-section p {
-  margin-bottom: 30px !important;
+a {
+  color: inherit !important;
+  text-decoration: none !important;
 }
-
-.home-section {
-  width: 100%;
-  height: calc(100vh - 40px);
-  background: url(../assets/images/laptopbg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: table;
-  color: #fff;
-  font-weight: bold;
-}
-.home-section-container {
-  display: table-cell;
-  vertical-align: middle;
-}
-section {
-  width: 100%;
-  min-height: calc(100vh - 40px);
-}
-.section-title {
-  text-align: center;
-  margin-bottom: 25px !important;
-  font-weight: 600 !important;
-}
-.skills-image-wrapper {
-  height: 100px;
-  display: flex;
-}
-.e-section p,
-.projects-section .card {
-}
-.about-section p {
-  font-size: 18px;
-}
-.e-section {
-  padding-bottom: 150px;
-}
-.company-logo-wrapper {
-  width: 166px;
-  text-align: center;
-}
-
-.srec-logo {
-  width: 100px;
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-/*  */
-.vidhya-profile-img {
-  border-radius: 50%;
+ul {
+  list-style: none;
+  padding: 0 !important;
 }
 .profile-section {
+  padding: 130px 0;
   width: 100%;
-  height: calc(100vh - 40px);
-  background-color: #f5edeb73;
+  height: 100%;
+  background-color: #f6f7fd;
+  /* background-image: linear-gradient(#efdae7, #fff); */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.profile-section__right-content {
-  width: 400px;
-  margin-left: 20px;
+.profile-img-wrapper {
+  width: 320px;
+  height: 242px;
+  position: relative;
+  border: 26px solid #32a4e7;
+  margin-top: 95px;
 }
 
-@media only screen and (max-width: 576px) {
-  footer {
-    padding: 10px;
-    height: 64px;
-  }
-  footer > .row > div {
-    text-align: center;
-  }
-  footer > .row > div:first-child {
-    margin-bottom: 5px;
-  }
-  .home-section,
-  .profile-section {
-    height: calc(100vh - 64px);
-  }
-  .profile-section {
-    flex-wrap: wrap;
-  }
+.box1 {
+  width: 105px;
+  height: 101px;
+  border: 5px solid #f77a90;
+  position: absolute;
+  right: -69px;
+  top: 15px;
+}
+.box2 {
+  width: 105px;
+  height: 101px;
+  border: 5px solid skyblue;
+  position: absolute;
+  left: -65px;
+  bottom: 51px;
+}
+.profile-img {
+  position: absolute;
+  left: 50%;
+  width: 300px;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.profile-content-right {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 147px;
+}
+
+.profile-title {
+  font-family: "Noto Sans";
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20px !important;
+}
+.profile-title-name {
+  color: #f179a7;
+}
+.profile-designation {
+  font-size: 26px;
+}
+.role {
+  color: #44a6d3;
+}
+.social-media-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.social-media-icon {
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background: #44a6d3;
+  font-size: 20px;
+}
+
+.lets-talk-btn {
+  width: 88px;
+  height: 35px;
+  background-color: #f179a7;
+  border: 1px solid #f179a7;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  outline: none;
+  margin-top: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 30px 0 20px 0;
+}
+.bubble {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.bubble1 {
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+.bubble2 {
+  background-color: #b4b3d8;
+  position: absolute;
+  top: 100px;
+  left: 277px;
+}
+.bubble3 {
+  background-color: #ffb70f80;
+  position: absolute;
+  top: 149px;
+  left: 126px;
+}
+.bubble4 {
+  background-color: pink;
+  position: absolute;
+  top: 300px;
+  left: 224px;
+}
+.bubble5 {
+  background-color: blue;
+  position: absolute;
+  top: 250px;
+  left: 90px;
 }
