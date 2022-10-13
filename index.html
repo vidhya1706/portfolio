@@ -26,46 +26,139 @@
 
   <body>
     <section class="profile-section">
-      <div class="bubble bubble1"></div>
-      <div class="bubble bubble2"></div>
-      <div class="bubble bubble3"></div>
-      <div class="bubble bubble4"></div>
-      <div class="bubble bubble5"></div>
-
-      <div class="profile-img-wrapper">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <img src="./assets/images/vidhya.png" alt="" class="profile-img" />
-      </div>
-      <div class="profile-content-right">
-        <p class="profile-title">
-          Hy! I am <br />
-          <span class="profile-title-name">Vidhya</span>
-        </p>
-        <p class="profile-designation">
-          I'm working as a <span class="role">Frontend Developer</span><br />
-          at Good Glamm Group
-        </p>
-        <button type="button" class="lets-talk-btn">Let's Talk</button>
-        <div class="social-media-profile">
-          <a href="https://www.linkedin.com/in/vidhya1706/" target="_blank"
-            ><div class="social-media-icon">
-              <i class="fa fa-linkedin"></i></div
-          ></a>
-          <a href="mailto:vidhya.inboxme@gmail.com" target="_blank"
-            ><div class="social-media-icon">
-              <i class="fa fa-envelope"></i></div
-          ></a>
-          <a href="https://github.com/vidhya-balasubramanian" target="_blank"
-            ><div class="social-media-icon" style="font-size: 28px">
-              <i class="fa fa-github-square"></i></div
-          ></a>
-          <a href="https://codepen.io/vidhya-balasubramanian" target="_blank"
-            ><div class="social-media-icon">
-              <i class="fa fa-codepen"></i></div
-          ></a>
+      <div class="profile-section-content">
+        <div class="profile-img-wrapper">
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <img src="./assets/images/vidhya.png" alt="" class="profile-img" />
+        </div>
+        <div class="profile-content-right">
+          <div class="bubble bubble2"></div>
+          <div class="bubble bubble3"></div>
+          <div class="profile-title">
+            <div class="bubble bubble1"></div>
+            Hy! I am <br />
+            <span class="profile-title-name">Vidhya</span>
+          </div>
+          <div class="profile-designation">
+            I'm working as a <span class="role">Frontend Developer</span><br />
+            at Good Glamm Group
+          </div>
+          <button type="button" class="lets-talk-btn">Let's Talk</button>
+          <div class="social-media-profile"></div>
+          <div class="bubble bubble4"></div>
+          <div class="bubble bubble5"></div>
         </div>
       </div>
     </section>
+    <section class="skills-section">
+      <h1 class="section-title">Skills</h1>
+      <div class="item-wrapper"></div>
+    </section>
+    <footer>
+      <p class="text">Created using pure HTML & CSS &#129395;</p>
+    </footer>
+    <script>
+      const socialMediaPlatforms = [
+        {
+          id: "linkedin",
+          icon: "fa fa-linkedin",
+          link: "https://www.linkedin.com/in/vidhya1706/",
+        },
+        {
+          id: "linkedin",
+          icon: "fa fa-envelope",
+          link: "mailto:vidhya.inboxme@gmail.com",
+        },
+        {
+          id: "linkedin",
+          icon: "fa fa-github-square",
+          link: "https://github.com/vidhya-balasubramanian",
+        },
+        {
+          id: "linkedin",
+          icon: "fa fa-codepen",
+          link: "https://codepen.io/vidhya-balasubramanian",
+        },
+      ];
+
+      let socialMediaPlatformContent = "";
+      for (let i = 0; i < socialMediaPlatforms.length; i++) {
+        socialMediaPlatformContent += `<a href=${socialMediaPlatforms[i].link} target="_blank"
+              ><div class="social-media-icon">
+                <i class="fa ${socialMediaPlatforms[i].icon}"></i></div
+            ></a>`;
+      }
+      const smElem = document.getElementsByClassName("social-media-profile");
+      if (smElem?.length) {
+        smElem[0].innerHTML = socialMediaPlatformContent;
+      }
+
+      const skills = [
+        {
+          name: "HTML",
+          imgSrc: "./assets/images/html-logo.png",
+        },
+        {
+          name: "CSS",
+          imgSrc: "./assets/images/css-logo.png",
+        },
+        {
+          name: "JavaScript",
+          imgSrc: "./assets/images/js-logo.png",
+        },
+        {
+          name: "Sass",
+          imgSrc: "./assets/images/scss.svg",
+        },
+        {
+          name: "Antd",
+          imgSrc: "./assets/images/antd-logo.png",
+        },
+        {
+          name: "Bootstrap",
+          imgSrc: "./assets/images/bootstrap-logo.png",
+        },
+        {
+          name: "React JS",
+          imgSrc: "./assets/images/react-logo.png",
+        },
+        {
+          name: " Next JS",
+          imgSrc: "./assets/images/nextjs-logo.png",
+        },
+        {
+          name: "Redux",
+          imgSrc: "./assets/images/redux.png",
+        },
+        {
+          name: "Webpack",
+          imgSrc: "./assets/images/webpack.png",
+        },
+        {
+          name: "Rollup",
+          imgSrc: "./assets/images/rollup.svg",
+        },
+        {
+          name: "Esbuild",
+          imgSrc: "./assets/images/esbuild.svg",
+        },
+        {
+          name: "Axios",
+          imgSrc: "./assets/images/axios.svg",
+        },
+      ];
+      let skillsContent = "";
+      for (let i = 0; i < skills.length; i++) {
+        skillsContent += `<div class="item">
+          <img src=${skills[i].imgSrc} style="width: 90px" />
+          <p class="item-title">${skills[i].name}</p>
+        </div>`;
+      }
+      const itemWrapperElem = document.getElementsByClassName("item-wrapper");
+      if (itemWrapperElem?.length) {
+        itemWrapperElem[0].innerHTML = skillsContent;
+      }
+    </script>
   </body>
 </html>

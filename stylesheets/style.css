@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 body {
   margin: 0;
@@ -17,44 +17,46 @@ ul {
   padding: 0 !important;
 }
 .profile-section {
-  padding: 130px 0;
   width: 100%;
   height: 100%;
   background-color: #f6f7fd;
   /* background-image: linear-gradient(#efdae7, #fff); */
+}
+.profile-section-content {
+  padding: 13rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 .profile-img-wrapper {
-  width: 320px;
-  height: 242px;
+  width: 29rem;
+  height: 24.2rem;
   position: relative;
-  border: 26px solid #32a4e7;
-  margin-top: 95px;
+  border: 2.1rem solid #32a4e7;
+  margin-top: 9.5rem;
 }
 
 .box1 {
-  width: 105px;
-  height: 101px;
-  border: 5px solid #f77a90;
+  width: 8.6rem;
+  height: 8.1rem;
+  border: 7px solid #f77a90;
   position: absolute;
-  right: -69px;
-  top: 15px;
+  right: -6.1rem;
+  top: 1.5rem;
 }
 .box2 {
-  width: 105px;
-  height: 101px;
-  border: 5px solid skyblue;
+  width: 8.6rem;
+  height: 8.1rem;
+  border: 7px solid skyblue;
   position: absolute;
-  left: -65px;
-  bottom: 51px;
+  left: -6.1rem;
+  bottom: 1.5rem;
 }
 .profile-img {
   position: absolute;
   left: 50%;
-  width: 300px;
+  width: 30rem;
   transform: translateX(-50%);
   bottom: 0;
 }
@@ -64,20 +66,22 @@ ul {
   justify-content: center;
   height: 100%;
   flex-direction: column;
-  margin-left: 147px;
+  margin-left: 14rem;
+  position: relative;
 }
 
 .profile-title {
   font-family: "Noto Sans";
   font-weight: 800;
-  font-size: 40px;
+  font-size: 4rem;
   margin-bottom: 20px !important;
 }
 .profile-title-name {
   color: #f179a7;
 }
 .profile-designation {
-  font-size: 26px;
+  font-size: 2.6rem;
+  position: relative;
 }
 .role {
   color: #44a6d3;
@@ -87,34 +91,36 @@ ul {
   align-items: center;
   margin-top: 25px;
 }
+.social-media-profile > a:not(:last-child) {
+  margin-right: 20px;
+}
 
 .social-media-icon {
   color: #fff;
   border: 1px solid transparent;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
   background: #44a6d3;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .lets-talk-btn {
-  width: 88px;
-  height: 35px;
+  width: 8.8rem;
+  height: 3.5rem;
   background-color: #f179a7;
   border: 1px solid #f179a7;
   color: #fff;
   border-radius: 6px;
   font-weight: bold;
   outline: none;
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
   cursor: pointer;
-  margin: 30px 0 20px 0;
+  margin: 3rem 0 2rem 0;
 }
 .bubble {
   width: 20px;
@@ -124,30 +130,111 @@ ul {
 .bubble1 {
   background-color: red;
   position: absolute;
-  top: 30px;
-  left: 50px;
+  top: 0;
+  left: -25px;
 }
 .bubble2 {
   background-color: #b4b3d8;
   position: absolute;
-  top: 100px;
-  left: 277px;
+  top: -30px;
+  right: 0;
 }
 .bubble3 {
   background-color: #ffb70f80;
   position: absolute;
-  top: 149px;
-  left: 126px;
+  right: 102px;
+  top: 2px;
 }
 .bubble4 {
   background-color: pink;
   position: absolute;
-  top: 300px;
+  bottom: -51px;
   left: 224px;
 }
 .bubble5 {
   background-color: blue;
   position: absolute;
-  top: 250px;
   left: 90px;
+  bottom: -87px;
+}
+footer {
+  height: 4.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 99;
+  background-color: #fff;
+}
+footer .text {
+  font-size: 1.5rem;
+  margin-right: 1.6rem !important;
+}
+.skills-section {
+  margin-bottom: 300px;
+  background-color: #ef5d7c;
+  padding: 22px;
+}
+.section-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 50px !important;
+}
+.item-wrapper {
+  display: grid;
+  grid-template-columns: 161px 161px 161px 161px;
+  justify-content: center;
+  gap: 38px 85px;
+}
+.item {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  padding: 36px 0 22px 0;
+}
+.item-title {
+  font-size: 15px;
+  margin-top: 6px !important;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1020px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .profile-section {
+    flex-direction: column;
+  }
+  .profile-content-right {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .profile-title {
+    text-align: center;
+  }
+  .profile-designation {
+    text-align: center;
+  }
+  .lets-talk-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-media-profile {
+    justify-content: center;
+  }
+  .bubble {
+    display: none;
+  }
 }
