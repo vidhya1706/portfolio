@@ -2,11 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
     <title>Vidhya</title>
     <!-- styles  -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/section-profile.css" />
+    <link rel="stylesheet" href="./stylesheets/section-skills.css" />
+    <link rel="stylesheet" href="./stylesheets/section-footer.css" />
+    <link rel="stylesheet" href="./stylesheets/section-experience.css" />
 
     <!-- font awesome  -->
     <link
@@ -28,36 +33,49 @@
     <section class="profile-section">
       <div class="profile-section-content">
         <div class="profile-img-wrapper">
-          <div class="box1"></div>
-          <div class="box2"></div>
+          <div class="profile-box-right"></div>
+          <div class="profile-box-left"></div>
           <img src="./assets/images/vidhya.png" alt="" class="profile-img" />
         </div>
         <div class="profile-content-right">
-          <div class="bubble bubble2"></div>
-          <div class="bubble bubble3"></div>
+          <div class="profile-color-ball profile-color-ball2"></div>
+
           <div class="profile-title">
-            <div class="bubble bubble1"></div>
+            <div class="profile-color-ball profile-color-ball1"></div>
             Hy! I am <br />
             <span class="profile-title-name">Vidhya</span>
           </div>
           <div class="profile-designation">
-            I'm working as a <span class="role">Frontend Developer</span><br />
+            I'm working as a <br /><span class="role">Frontend Developer</span
+            ><br />
             at Good Glamm Group
+            <div class="profile-color-ball profile-color-ball3"></div>
           </div>
           <button type="button" class="lets-talk-btn">Let's Talk</button>
           <div class="social-media-profile"></div>
-          <div class="bubble bubble4"></div>
-          <div class="bubble bubble5"></div>
+          <div class="profile-color-ball profile-color-ball4"></div>
+          <div class="profile-color-ball profile-color-ball5"></div>
         </div>
       </div>
     </section>
     <section class="skills-section">
       <h1 class="section-title">Skills</h1>
-      <div class="item-wrapper"></div>
+      <div class="skills-item-wrapper"></div>
     </section>
+    <section class="section-experience">
+      <ul>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+      </ul>
+    </section>
+
     <footer>
-      <p class="text">Created using pure HTML & CSS &#129395;</p>
+      <p class="footer-text">Created using pure HTML & CSS &#129395;</p>
     </footer>
+
     <script>
       const socialMediaPlatforms = [
         {
@@ -98,64 +116,79 @@
         {
           name: "HTML",
           imgSrc: "./assets/images/html-logo.png",
+          width: "80px",
         },
         {
           name: "CSS",
           imgSrc: "./assets/images/css-logo.png",
+          width: "80px",
         },
         {
           name: "JavaScript",
           imgSrc: "./assets/images/js-logo.png",
+          width: "80px",
         },
         {
           name: "Sass",
           imgSrc: "./assets/images/scss.svg",
+          width: "90px",
         },
         {
           name: "Antd",
           imgSrc: "./assets/images/antd-logo.png",
+          width: "90px",
         },
         {
           name: "Bootstrap",
           imgSrc: "./assets/images/bootstrap-logo.png",
+          width: "90px",
         },
         {
           name: "React JS",
           imgSrc: "./assets/images/react-logo.png",
+          width: "126px",
         },
         {
           name: " Next JS",
           imgSrc: "./assets/images/nextjs-logo.png",
+          width: "90px",
         },
         {
           name: "Redux",
           imgSrc: "./assets/images/redux.png",
+          width: "90px",
         },
         {
           name: "Webpack",
           imgSrc: "./assets/images/webpack.png",
+          width: "90px",
         },
         {
           name: "Rollup",
           imgSrc: "./assets/images/rollup.svg",
+          width: "90px",
         },
         {
           name: "Esbuild",
           imgSrc: "./assets/images/esbuild.svg",
+          width: "90px",
         },
         {
           name: "Axios",
           imgSrc: "./assets/images/axios.svg",
+          width: "127px",
         },
       ];
       let skillsContent = "";
       for (let i = 0; i < skills.length; i++) {
-        skillsContent += `<div class="item">
-          <img src=${skills[i].imgSrc} style="width: 90px" />
-          <p class="item-title">${skills[i].name}</p>
+        skillsContent += `<div class="skills-item">
+          <div class="skills-item-img-wrapper"><img src=${skills[i].imgSrc} width=${skills[i].width} /></div>
+          <p class="skills-item-title">${skills[i].name}</p>
         </div>`;
       }
-      const itemWrapperElem = document.getElementsByClassName("item-wrapper");
+      const itemWrapperElem = document.getElementsByClassName(
+        "skills-item-wrapper"
+      );
       if (itemWrapperElem?.length) {
         itemWrapperElem[0].innerHTML = skillsContent;
       }

@@ -1,0 +1,31 @@
+.section-experience {
+  margin-bottom: 300px;
+  padding: 20px;
+}
+.bar {
+  list-style: none;
+}
+.bar > li {
+  position: relative;
+}
+.bar > li:before {
+  content: "\25CF";
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.bar > li:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-left: 2px solid black;
+  margin-left: 5px;
+  height: 100%;
+}
+.bar > li:first-of-type:after {
+  top: 50%;
+}
+.bar > li:last-of-type:after {
+  top: -50%;
+}
