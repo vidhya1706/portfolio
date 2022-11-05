@@ -1,7 +1,6 @@
 .skills-section {
   background-color: #ef5d7c;
   padding: 22px;
-  display: none;
 }
 .skills-item-img-wrapper {
   height: 91px;
@@ -29,10 +28,9 @@
 }
 @media only screen and (max-width: 768px) {
   .skills-item-wrapper {
-    display: block;
   }
   .skills-item {
-    width: 170px;
+    width: 100%;
     height: 155px;
     margin-bottom: 20px;
     padding: 0;
@@ -41,10 +39,8 @@
     justify-content: center;
     align-items: center;
   }
-  .skills-item:nth-child(odd) {
-    margin-right: auto;
-  }
-  .skills-item:nth-child(even) {
-    margin-left: auto;
+  .skills-item-wrapper {
+    grid-template-columns: 135px 135px;
+    gap: 20px;
   }
 }

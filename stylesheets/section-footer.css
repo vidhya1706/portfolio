@@ -6,12 +6,11 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   z-index: 99;
-  background-color: #fff;
+  background-color: #c0def1;
 }
 footer .footer-text {
   font-size: 1.5rem;
-  margin-right: 1.6rem !important;
   color: #a14040;
 }

@@ -1,0 +1,15 @@
+.section-about {
+  padding: 33px 19px;
+  background: #f1efef;
+}
+.about-content {
+  font-size: 17px;
+  color: #000;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.about-title {
+  color: #516655;
+  margin-bottom: 20px !important;
+}

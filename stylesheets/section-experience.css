@@ -1,31 +1,65 @@
 .section-experience {
-  margin-bottom: 300px;
   padding: 20px;
+  background: #f1efef;
 }
-.bar {
+.experience-title {
+  color: #516655;
+}
+.step-progress {
+  position: relative;
+  padding-left: 45px !important;
   list-style: none;
+  font-size: 16px;
 }
-.bar > li {
+.step-progress::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 14px;
+  width: 1px;
+  height: 100%;
+  background-color: #d7d6d6;
+}
+.step-progress-item {
   position: relative;
 }
-.bar > li:before {
-  content: "\25CF";
-  margin-right: 10px;
-  font-size: 20px;
+.step-progress-item:not(:last-child) {
+  padding-bottom: 20px;
 }
-
-.bar > li:after {
-  position: absolute;
-  left: 0;
-  top: 0;
+.step-progress-item:nth-child(1)::after {
+  background-color: #f18b8b;
+  border: 2px solid #f18b8b;
+}
+.step-progress-item:nth-child(2)::after,
+.step-progress-item:nth-child(3)::after {
+  background-color: #e9a0c5;
+  border: 2px solid #e9a0c5;
+}
+.step-progress-item:nth-child(4)::after {
+  background-color: #44a6d3;
+  border: 2px solid #44a6d3;
+}
+.step-progress-item::after {
   content: "";
-  border-left: 2px solid black;
-  margin-left: 5px;
-  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -37px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
-.bar > li:first-of-type:after {
-  top: 50%;
+.designation {
+  font-size: 16px;
+  font-weight: bold;
 }
-.bar > li:last-of-type:after {
-  top: -50%;
+.org-name {
+  font-size: 14px;
+  margin: 10px 0 !important;
+  color: #0074cc;
+}
+.year {
+  font-size: 14px;
+  margin: 5px 0 !important;
 }
