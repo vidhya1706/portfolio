@@ -1,0 +1,26 @@
+.section-about {
+  padding: 33px 19px;
+  background: #fff;
+}
+.about-content {
+  font-size: 17px;
+  color: #000;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 400;
+
+  width: 550px;
+  display: block;
+  margin: auto !important;
+  text-align: center;
+}
+.about-title {
+  color: #ea4c89;
+  margin-bottom: 20px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-content {
+    width: 90%;
+  }
+}

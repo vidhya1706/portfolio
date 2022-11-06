@@ -1,0 +1,174 @@
+.profile-section {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f7fd;
+  /* background-image: linear-gradient(#efdae7, #fff); */
+}
+.profile-section-content {
+  padding: 13rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.profile-img-wrapper {
+  width: 29rem;
+  height: 24.2rem;
+  position: relative;
+  border: 2.1rem solid #32a4e7;
+  margin-top: 9.5rem;
+}
+.profile-box-right {
+  width: 8.6rem;
+  height: 8.1rem;
+  border: 7px solid #f77a90;
+  position: absolute;
+  right: -6.1rem;
+  top: 1.5rem;
+}
+.profile-box-left {
+  width: 8.6rem;
+  height: 8.1rem;
+  border: 7px solid skyblue;
+  position: absolute;
+  left: -6.1rem;
+  bottom: 1.5rem;
+}
+.profile-img {
+  position: absolute;
+  left: 50%;
+  width: 30rem;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.profile-content-right {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 14rem;
+  position: relative;
+}
+.profile-title {
+  font-weight: 800;
+  font-size: 4rem;
+  margin-bottom: 20px !important;
+}
+.profile-title-name {
+  color: #f179a7;
+}
+.profile-designation {
+  font-size: 2.6rem;
+  position: relative;
+}
+.role {
+  color: #44a6d3;
+}
+.social-media-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.social-media-profile > a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-media-icon {
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #44a6d3;
+  font-size: 2rem;
+}
+
+.lets-talk-btn {
+  width: 8.8rem;
+  height: 3.5rem;
+  background-color: #f179a7;
+  border: 1px solid #f179a7;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  outline: none;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin: 3rem 0 2rem 0;
+}
+.profile-color-ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.profile-color-ball1 {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+.profile-color-ball2 {
+  background-color: #b4b3d8;
+  position: absolute;
+  top: -11px;
+  right: 0;
+}
+.profile-color-ball3 {
+  background-color: #ffb70f80;
+  position: absolute;
+  right: -39px;
+  bottom: 0;
+}
+.profile-color-ball4 {
+  background-color: pink;
+  position: absolute;
+  bottom: -51px;
+  left: 224px;
+}
+.profile-color-ball5 {
+  background-color: blue;
+  position: absolute;
+  left: 90px;
+  bottom: -87px;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-img {
+    width: 28rem;
+  }
+  .profile-section-content {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  .profile-content-right {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .profile-title {
+    text-align: center;
+  }
+  .profile-designation {
+    text-align: center;
+    line-height: 30px;
+  }
+  .lets-talk-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10.8rem;
+    height: 4.5rem;
+    font-size: 1.8rem;
+  }
+  .social-media-profile {
+    justify-content: center;
+  }
+  .social-media-icon {
+    font-size: 2.4rem;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}

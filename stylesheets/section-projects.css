@@ -1,0 +1,32 @@
+.section-projects {
+  padding: 20px;
+  background: #fff;
+}
+.projects-title {
+  color: #ea4c89;
+}
+.project-content {
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 26px 15px;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+.project-title {
+  font-size: 18px;
+  margin: 10px;
+  color: #2349b9;
+}
+.project-text {
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+}
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

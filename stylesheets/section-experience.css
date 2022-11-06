@@ -1,0 +1,70 @@
+.section-experience {
+  padding: 20px;
+  background: #fff;
+}
+.experience-title {
+  color: #ea4c89;
+}
+.progress-wrapper {
+  display: block;
+  margin: auto;
+  width: 310px;
+}
+.step-progress {
+  position: relative;
+  padding-left: 45px !important;
+  list-style: none;
+  font-size: 16px;
+}
+.step-progress::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 14px;
+  width: 1px;
+  height: 100%;
+  background-color: #d7d6d6;
+}
+.step-progress-item {
+  position: relative;
+}
+.step-progress-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+.step-progress-item:nth-child(1)::after {
+  background-color: #f18b8b;
+  border: 2px solid #f18b8b;
+}
+.step-progress-item:nth-child(2)::after,
+.step-progress-item:nth-child(3)::after {
+  background-color: #e9a0c5;
+  border: 2px solid #e9a0c5;
+}
+.step-progress-item:nth-child(4)::after {
+  background-color: #44a6d3;
+  border: 2px solid #44a6d3;
+}
+.step-progress-item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -37px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.designation {
+  font-size: 16px;
+  font-weight: bold;
+}
+.org-name {
+  font-size: 14px;
+  margin: 10px 0 !important;
+  color: #0074cc;
+}
+.year {
+  font-size: 14px;
+  margin: 5px 0 !important;
+}

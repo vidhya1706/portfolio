@@ -1,91 +1,37 @@
-footer {
-  background-color: #222222;
-  width: 100%;
-  height: 40px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  color: white;
-  padding-top: 10px;
-  font-weight: bold;
+html {
+  font-size: 62.5%;
 }
-footer a {
-  margin-right: 15px;
+body {
+  margin: 0;
+  font-family: "Noto Sans";
 }
-.skills-section img,
-.about-section img {
-  display: block;
-  margin: auto;
+p {
+  margin: 0 !important;
 }
-.skills-section p {
-  margin-bottom: 30px !important;
-  font-family: "Proximanova-Regular";
-  font-weight: 200;
+a {
+  color: inherit !important;
+  text-decoration: none !important;
 }
-
-.home-section {
-  width: 100%;
-  height: calc(100vh - 40px);
-  background: url(../assets/images/laptopbg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: table;
-  color: #fff;
-  font-weight: bold;
-  font-family: "Arvo", serif !important;
-}
-.home-section-container {
-  display: table-cell;
-  vertical-align: middle;
-}
-section {
-  width: 100%;
-  min-height: calc(100vh - 40px);
+ul {
+  list-style: none;
+  padding: 0 !important;
 }
 .section-title {
+  font-size: 3.5rem;
   text-align: center;
-  margin-bottom: 25px !important;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600 !important;
-}
-.skills-image-wrapper {
-  height: 100px;
-  display: flex;
-}
-.e-section p,
-.projects-section .card {
-  font-family: Proximanova-Regular;
-}
-.about-section p {
-  font-size: 18px;
-  font-family: "Proximanova-Regular";
-}
-.e-section {
-  padding-bottom: 150px;
-}
-.company-logo-wrapper {
-  width: 166px;
-  text-align: center;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 30px !important;
 }
 
-.srec-logo {
-  width: 100px;
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
+@media only screen and (min-width: 601px) and (max-width: 1020px) {
+  html {
+    font-size: 48%;
+  }
 }
-@media only screen and (max-width: 576px) {
-  footer {
-    padding: 10px;
-    height: 64px;
-  }
-  footer > .row > div {
-    text-align: center;
-  }
-  footer > .row > div:first-child {
-    margin-bottom: 5px;
-  }
-  .home-section {
-    height: calc(100vh - 64px);
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
   }
 }
