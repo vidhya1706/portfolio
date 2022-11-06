@@ -1,9 +1,14 @@
 .section-experience {
   padding: 20px;
-  background: #f1efef;
+  background: #fff;
 }
 .experience-title {
-  color: #516655;
+  color: #ea4c89;
+}
+.progress-wrapper {
+  display: block;
+  margin: auto;
+  width: 310px;
 }
 .step-progress {
   position: relative;

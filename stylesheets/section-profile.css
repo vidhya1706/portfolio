@@ -142,6 +142,7 @@
   }
   .profile-section-content {
     flex-direction: column;
+    padding-top: 3rem;
   }
   .profile-content-right {
     margin-left: 0;
