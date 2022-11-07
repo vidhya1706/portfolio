@@ -158,7 +158,7 @@
           </h5>
           <p class="project-text">
             Babychakra is the India's fastest growing and largest platform for
-            pregnancy and childcare. On BabyChakra, parents plug into a
+            pregnancy and childcare. Through BabyChakra, parents can plug into a
             personalized ecosystem and can connect with other parents, experts
             and can buy relevant services and products.
             <br />
@@ -189,17 +189,17 @@
             <b>Adcuratio Core Product</b>
           </h5>
           <p class="project-text">
-            Most of the Indian and US TV channels show the same ads to everyone
-            in the country. We are making a product that displays different ads
-            to the different people.
+            Most of the Indian and US Tv channels show the same ads to everyone
+            in the country. We have made a product that displays different ads
+            to different people.
           </p>
         </div>
 
         <div class="project-content">
           <h5 class="project-title"><b>Blinc</b></h5>
           <p class="project-text">
-            Flight booking website where users can book flights from city to
-            city / from location to location.
+            Flight booking website where users can book flights from one city to
+            another.
           </p>
         </div>
 
@@ -209,8 +209,8 @@
           </h5>
           <p class="project-text">
             Freelancer website where employers and employees are able to find
-            each other. The site allows employers to post work and freelancer
-            gets hired for the project posted.
+            each other. This allows employers to post work requirements and
+            freelancer can apply for work and get hired.
           </p>
         </div>
 
@@ -228,15 +228,14 @@
         <div class="project-content">
           <h5 class="project-title"><b>StoryCo</b></h5>
           <p class="project-text">
-            Website that helps you to find more about yourself.
+            Website that helps you to know more about yourself.
           </p>
         </div>
 
         <div class="project-content">
           <h5 class="project-title"><b>Ashok Leyland</b></h5>
           <p class="project-text">
-            Admin dashboard where the admin can access the information about the
-            vehicles.
+            Admin dashboard where admin can access the vehicle information.
           </p>
         </div>
 
@@ -313,14 +312,17 @@
 
       let socialMediaPlatformContent = "";
       for (let i = 0; i < socialMediaPlatforms.length; i++) {
-        socialMediaPlatformContent += `<a href=${socialMediaPlatforms[i].link} target="_blank"
-              ><div class="social-media-icon">
-                <i class="fa ${socialMediaPlatforms[i].icon}"></i></div
-            ></a>`;
+        socialMediaPlatformContent += `
+         <a href=${socialMediaPlatforms[i].link} target="_blank">
+           <div class="social-media-icon">
+                <i class="fa ${socialMediaPlatforms[i].icon}"></i>
+            </div>
+         </a>
+        `;
       }
-      const smElem = document.getElementsByClassName("social-media-profile");
-      if (smElem?.length) {
-        smElem[0].innerHTML = socialMediaPlatformContent;
+      const socialMediaElement = document.getElementsByClassName("social-media-profile");
+      if (socialMediaElement?.length) {
+        socialMediaElement[0].innerHTML = socialMediaPlatformContent;
       }
 
       const skills = [
@@ -392,10 +394,14 @@
       ];
       let skillsContent = "";
       for (let i = 0; i < skills.length; i++) {
-        skillsContent += `<div class="skills-item">
-          <div class="skills-item-img-wrapper"><img src=${skills[i].imgSrc} width=${skills[i].width} /></div>
+        skillsContent + = `
+        <div class="skills-item">
+          <div class="skills-item-img-wrapper">
+            <img src=${skills[i].imgSrc} width=${skills[i].width} />
+          </div>
           <p class="skills-item-title">${skills[i].name}</p>
-        </div>`;
+        </div>
+        `;
       }
       const itemWrapperElem = document.getElementsByClassName(
         "skills-item-wrapper"
